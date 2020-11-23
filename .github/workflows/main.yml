@@ -44,4 +44,4 @@ jobs:
       - name: Installing surge
         run: npm install -g surge
       - name: deploying on surge
-        run: surge ./http://bootcamp2020-counter_app.surge.sh/ --token {{secrets.SURGE_TOKEN}} 
+        run: surge ./http://bootcamp2020-counter_app.surge.sh/ --token ${{secrets.SURGE_TOKEN}} 
